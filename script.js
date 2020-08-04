@@ -63,3 +63,13 @@ cancelButton.addEventListener("click",function(){
 
 });
 
+const removeButton = document.getElementById("removeButton");
+removeButton.addEventListener("click",function(){
+
+    let numberString = document.getElementById("submitDisplay").value; 
+    let stringLeft = numberString.length - 1;
+    let stringToSetNew = numberString.slice(0, stringLeft);
+    submitDisplayInput = stringToSetNew;
+    document.getElementById("submitDisplay").value = submitDisplayInput;
+});
+
