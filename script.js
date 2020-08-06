@@ -2,6 +2,8 @@
 document.getElementById("no-match-notify").style.display = "none"; 
 document.getElementById("match-notify").style.display = "none"; 
 
+
+
 let randomNumber = 0;
 
 
@@ -45,6 +47,7 @@ submitButton.addEventListener("click", function(){
     if(randomNumber == parseInt(submitDisplayInput)){
 
         document.getElementById("match-notify").style.display = "block"; 
+        document.getElementById("no-match-notify").style.display = "none";
     }else{
 
         document.getElementById("match-notify").style.display = "none"; 
