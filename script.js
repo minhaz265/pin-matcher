@@ -51,10 +51,13 @@ submitButton.addEventListener("click", function(){
 
         document.getElementById("match-notify").style.display = "block"; 
         document.getElementById("no-match-notify").style.display = "none";
+        document.getElementById("tryChance").innerText = "";
     }else{
 
         document.getElementById("match-notify").style.display = "none"; 
         document.getElementById("no-match-notify").style.display = "block"; 
+        document.getElementById("tryChance").innerText = " try again";
+
         // 3 try left option
     }
     
