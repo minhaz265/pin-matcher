@@ -6,7 +6,7 @@ document.getElementById("match-notify").style.display = "none";
 
 let randomNumber = 0;
 
-
+// random number generator button 
 const generateBtn = document.getElementById("generateBtn");
 generateBtn.addEventListener("click", function(){
 
@@ -20,6 +20,7 @@ generateBtn.addEventListener("click", function(){
 
 let submitDisplayInput ="";
 
+// number buttons 
 function numberClicked(buttonNumber){
     const button = document.getElementById(buttonNumber);
     button.addEventListener("click",function(){
@@ -41,6 +42,8 @@ numberClicked(2);
 numberClicked(3);
 numberClicked(0);
 
+
+// submit button 
 const submitButton = document.getElementById("submitButton");
 submitButton.addEventListener("click", function(){
 
@@ -58,6 +61,8 @@ submitButton.addEventListener("click", function(){
 
 });
 
+
+// all clear button
 const cancelButton = document.getElementById("cancelButton");
 cancelButton.addEventListener("click",function(){
 
@@ -66,6 +71,8 @@ cancelButton.addEventListener("click",function(){
 
 });
 
+
+// one by one remove button 
 const removeButton = document.getElementById("removeButton");
 removeButton.addEventListener("click",function(){
 
